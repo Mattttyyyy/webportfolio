@@ -1,170 +1,502 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
   <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-      <!-- Bootstrap CSS -->
-      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-      <!-- External CSS -->
-      <link rel="stylesheet" href="style.css">
-  <title>Matthew Blasco</title>
+  <title>Matthew Blasco Profile</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <!-- <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon"> -->
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
 </head>
+
 <body>
-  <!-- Landing Page -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-    <a class="navbar-brand" href="#"></a>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
 
-    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
-        <li class="nav-item active">
-          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#aboutme">About</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#myprojects">Projects</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contactme">Contact</a>
-      </ul>
-      <!-- <form class="form-inline my-2 my-lg-0">
-        <input class="form-control mr-sm-2" type="search" placeholder="Search">
-        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-      </form> -->
-    </div>
-    </nav>
-    <div class="jumbotron text-center mb-5">
-      <div class="classic w-50">
-      <h1 class="display-4 mt-5">Hello, World!</h1>
-      <p class="lead">I'm <strong>Matthew Blasco</strong>, a web developer. Scaling web 2.0 to web 3.0 development is my mission. While businesses and consumers directly connected in an ever-sustainable web is my vision.</p>
-      <hr class="my-4">
-      <p>Want to build a website? Let's discuss further.</p>
-      <p class="lead">
-      <a class="btn btn-primary btn-lg" href="#myprojects" role="button">View My Profile</a>
-      </p>
-      </div>
-    </div>
-    <div>
-      <hr class="bg-info" id="aboutme">
-    </div>
-    <div class="bg-light">
-      <hr>
-    </div>
-  <!-- About Me -->
-  <div class="container mt-5 p-5" id="aboutme">
-    
-    <div class="row">
-      <div class="col-12 col-md-6 row1col1">
-        <h1 >ABOUT</h1>
-        <p class="mb-5">Since college, I have been dreaming to pursue a career that has to do with technology and computers. 
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center justify-content-between">
 
-        I have chosen BS HRM with regards to my father's wish and as his advice regarding the current job market at that time. And I was able to finish the course with flying colors. The graduation made him so proud; however, despite growing through the career choice my father had given and suggested to me, I still have a hunch within me that this is not what I really have wanted.</p>
+      <h1 class="logo"><a href="index.html">MBlasco</a></h1>
+      
+       <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
 
-        <p>Alas, during my latest 4-year career as a General Inventory Manager that handled different multiple hats inside the corporation and despite the workload responsibilities I've had, I was given an opportunity to develop a commitment to a new system that our company would adapt -NetSuite by Oracle.</p> 
-      </div>
-      <div class="col-12 col-md-6 row1col2">
-        <img src="./images/my.jpg" alt="matthew-blasco-image" class="img-fluid rounded h-auto w-auto">
-      </div>
-    </div>
-    <div class="row">
-      <div class="col row2col1">
-
-
-        <p class="mb-5">It was the start of my renewed curiosity and passion that I have once set aside during college and something I had experienced touching during highschool --coding. I reviewed my HTML, CSS, and even rushed towards jumping unto learning JavaScript in order to continue developing the said commitment. It was when another challenge came, the API I was going to handle was something I have never heard --SuiteScript, and it had 1.0 and 2.0 versions. </p>
-
-        <p class="mb-5">Lo and behold, after thousands of hours, rummaging my brain and the internet of every questions I had during the development, I was able to solo deliver the needed projects for our team:</p>
+      <nav id="navbar" class="navbar">
         <ul>
-        <li>Arranging the dashboards</li>
-        <li>Scripting functions</li>
-        <li>PDF Files</li> 
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#services">Services</a></li>
+          <li><a class="nav-link scrollto " href="#work">Work</a></li>
+<!--           <li><a class="nav-link scrollto " href="#blog">Blog</a></li>
+          <li class="dropdown"><a href="#"><span>Drop Down</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="#">Drop Down 1</a></li>
+              <li class="dropdown"><a href="#"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
+                <ul>
+                  <li><a href="#">Deep Drop Down 1</a></li>
+                  <li><a href="#">Deep Drop Down 2</a></li>
+                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Deep Drop Down 4</a></li>
+                  <li><a href="#">Deep Drop Down 5</a></li>
+                </ul>
+              </li>
+              <li><a href="#">Drop Down 2</a></li>
+              <li><a href="#">Drop Down 3</a></li>
+              <li><a href="#">Drop Down 4</a></li>
+            </ul>
+          </li> -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
         </ul>
-        <p class="mb-5">I learned BFO (Big Faceless Organization), CSS 2.0, JavaScript, and SuiteScript 2.0.</p>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
 
-        <p class="mb-5">It was when I realized, this is my calling. And now here I am. With Zuitt. Doing whatever I can to ready myself in a change of career. Despite the risks.</p>
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div id="hero" class="hero route bg-image" style="background-image: url(assets/img/coffeebanner.jpg)">
+    <div class="overlay-itro"></div>
+    <div class="hero-content display-table">
+      <div class="table-cell">
+        <div class="container">
+          <!--<p class="display-6 color-d">Hello, world!</p>-->
+          <h1 class="hero-title mb-4">I am Matthew.</h1>
+          <p class="hero-subtitle"><span class="typed" data-typed-items="Developer, Designer, Learner, Freelancer"></span></p>
+          <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
+        </div>
       </div>
     </div>
-  </div>
-  <!-- Transition 2 -->
-  <div>
-    <hr class="bg-info" id="myprojects">
-  </div>
-  <div class="bg-light">
-    <hr>
-  </div>
-  <!-- Projects-->
-  <div class="jumbotron">
-    <h1 class="display-5 text-center">MY PROJECTS</h1>
-  </div>
-  <!-- Transition 3 -->
-  <div>
-    <hr class="bg-info">
-  </div>
-  <div class="bg-light">
-  </div>
-  <!-- Projects -->
+  </div><!-- End Hero Section -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="box-shadow-full">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="row">
+                    <div class="col-sm-6 col-md-5">
+                      <div class="about-img">
+                        <img src="assets/img/mypic.jpg" class="img-fluid rounded b-shadow-a" alt="">
+                      </div>
+                    </div>
+                    <div class="col-sm-6 col-md-7">
+                      <div class="about-info">
+                        <p><span class="title-s">Name: </span> <span>Matthew Blasco</span></p>
+                        <p><span class="title-s">Profile: </span> <span>Full Stack developer</span></p>
+                        <p><span class="title-s">Email: </span> <span>wehttamocsalb@gmail.com</span></p>
+                        <p><span class="title-s">Phone: </span> <span>(+63) 951-479-3995</span></p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="skill-mf">
+                    <p class="title-s">Skill</p>
+                    <span>HTML</span> <span class="pull-right">85%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 85%;" aria-valuenow="85" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>CSS3</span> <span class="pull-right">75%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 75%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>MERN</span> <span class="pull-right">50%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <span>JAVASCRIPT</span> <span class="pull-right">90%</span>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="about-me pt-4 pt-md-0">
+                    <div class="title-box-2">
+                      <h5 class="title-left">
+                        About me
+                      </h5>
+                    </div>
+                    <p class="lead">
+                      Worked a total of 7 years in expertise of: customer service, hospitality, business management, and 6-months in helping develop a system. And my niche to surviving all of them was problem solving skills. With it comes me being a jack of all trades, by first choice - to survive, and to explore. But that has now come to an end. 
+                    </p>
+                    <p class="lead">
+                      I decided to switch into programming, coding, and developing as my end-game. A skill which I would master for the next decades of my life. This momentum I have has showed itself through and through which have always been delayed for various reasons. But I have finally taken the step forward, and decided to leave the comfortable box. From doing programming during my previous job/post to diving formally in a Bootcamp education.
+                    </p>
+                    <p class="lead">
+                      Now, I am able to fully design a responsive website page and host it publicly through GitHub, assess a script through JavaScript, integrate CDNs, and stack website architectures with a stronger foundation. Also, with regards to my previous experience, I am able to tackle on SuiteScript 2.0 API, create my own RESTful APIs and host them as well through PaaS - Heroku. 
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Services Section ======= -->
+    <section id="services" class="services-mf pt-5 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Services
+              </h3>
+              <p class="subtitle-a">
+                That I can help you out with. 
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-briefcase"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Design</h2>
+                <p class="s-description text-center">
+                  Wireframe, UI, UX and customized themes of your choice are available through an array of proposals handmade through Figma and various tools like GIMP, and Adobe inDesign.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-card-checklist"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Web Development</h2>
+                <p class="s-description text-center">
+                  Front-end to Back-end depending on the scale of the projects; source codes that are forged with the classics of HTML, CSS, & JavaScript. And also through MERN Stacking.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-bar-chart"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Photography</h2>
+                <p class="s-description text-center">
+                  If you find yourself lacking of the available photo collections, I can provide a personalized subject photos utilizing various cameras from DLSR Canon to mobile phones.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-binoculars"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Responsive Design</h2>
+                <p class="s-description text-center">
+                  We can use frameworks to deliver content targeted to mobile markets such as bootstrap or we can opt in to core CSS depending on your design needs. 
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-brightness-high"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">Graphic Design</h2>
+                <p class="s-description text-center">
+                  Logos, theme conceptualizations, marketing graphics, form designs, souvenirs, collectibles, and everything general handling graphic designs.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="service-box">
+              <div class="service-ico">
+                <span class="ico-circle"><i class="bi bi-calendar4-week"></i></span>
+              </div>
+              <div class="service-content">
+                <h2 class="s-title">General Services</h2>
+                <p class="s-description text-center">
+                  Depending on the scale of the project and my availability, I can help you with business feasibility studies, data curation, technical transcriptions, & more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Services Section -->
+
+    <!-- ======= Counter Section ======= -->
+    <div class="section-counter paralax-mf bg-image" style="background-image: url(assets/img/counters-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container position-relative">
+        <div class="row">
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-check"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="4" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WORKS COMPLETED</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-journal-richtext"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="1" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">YEARS OF EXPERIENCE</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-people"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="18" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">WEB DEV TOOLS</span>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-3 col-lg-3">
+            <div class="counter-box pt-4 pt-md-0">
+              <div class="counter-ico">
+                <span class="ico-circle"><i class="bi bi-award"></i></span>
+              </div>
+              <div class="counter-num">
+                <p data-purecounter-start="0" data-purecounter-end="7" data-purecounter-duration="1" class="counter purecounter"></p>
+                <span class="counter-text">GENERAL RECOGNITIONS</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div><!-- End Counter Section -->
+
+    <!-- ======= Portfolio Section ======= -->
+    <section id="work" class="portfolio-mf sect-pt4 route">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="title-box text-center">
+              <h3 class="title-a">
+                Portfolio
+              </h3>
+              <p class="subtitle-a">
+                Your project with me might be showcased here! 
+              </p>
+              <div class="line-mf"></div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-1.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">CV Design - MBlasco</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Graphic Design</span> / <span class="w-date">18 Apr. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.figma.com/file/RfnDItyCAVd5kAYWQltzgH/Project-F002---Matt-Blasco-CV?node-id=320%3A9" target="_blank"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-2.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">CV Design - Pat Blasco</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Graphic Design</span> / <span class="w-date">15 Apr. 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://www.figma.com/file/e02eM4aLTcrdeZYUAAZcAe/Project-F001---Pat-Blasco-CV?node-id=2%3A2"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-3.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">E-commerce Website</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">Mar 28 - Present</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://gitlab.com/matthew-blasco/capstone-3"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="work-box">
+              <a href="assets/img/work-4.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox">
+                <div class="work-img">
+                  <img src="assets/img/work-4.jpg" alt="" class="img-fluid">
+                </div>
+              </a>
+              <div class="work-content">
+                <div class="row">
+                  <div class="col-sm-8">
+                    <h2 class="w-title">Custom Backend REST API</h2>
+                    <div class="w-more">
+                      <span class="w-ctegory">Web Development</span> / <span class="w-date">March 2022</span>
+                    </div>
+                  </div>
+                  <div class="col-sm-4">
+                    <div class="w-like">
+                      <a href="https://gitlab.com/matthew-blasco/capstone-2/s1"> <span class="bi bi-plus-circle"></span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section><!-- End Portfolio Section -->
+
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="paralax-mf footer-paralax bg-image sect-mt4 route" style="background-image: url(assets/img/overlay-bg.jpg)">
+      <div class="overlay-mf"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-12">
+            <div class="contact-mf">
+              <div id="contact" class="box-shadow-full">
+                <div class="row">
+                  <div class="col-md-12">
+                    <div class="title-box-2 pt-4 pt-md-0">
+                      <h5 class="title-left">
+                        Get in Touch
+                      </h5>
+                    </div>
+                    <div class="more-info">
+                      <p class="lead">
+                        I am just a coffee normie who you can consult with. Be my friend, and we can chat over things like how hard life is, yet wonder how can it also be great at the same time. 
+                      </p>
+                      <ul class="list-ico">
+                        <li><span class="bi bi-geo-alt"></span> General Trias, Cavite</li>
+                        <li><span class="bi bi-phone"></span> (+63) 951-479-3995</li>
+                        <li><span class="bi bi-envelope"></span> wehttamocsalb@gmail.com</li>
+                      </ul>
+                    </div>
+                    <div class="socials">
+                      <ul>
+                        <li><a href="https://www.facebook.com/neyra.blasco" target="_blank"><span class="ico-circle"><i class="bi bi-facebook"></i></span></a></li>
+                        <li><a href="https://www.instagram.com/mattblasco/" target="_blank"><span class="ico-circle"><i class="bi bi-instagram"></i></span></a></li>
+                        <li><a href="https://twitter.com/hawking_fan" target="_blank"><span class="ico-circle"><i class="bi bi-twitter"></i></span></a></li>
+                        <li><a href="https://www.linkedin.com/in/mnblasco/" target="_blank"><span class="ico-circle"><i class="bi bi-linkedin"></i></span></a></li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End Contact Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer>
     <div class="container">
-    <div class="row d-flex p-5 justify-content-between projects text-center">
-      <div class="col-12 col-lg-3 card card01 pt-3 mb-3" style="width: 18rem;">
-        <img src="./images/project1.jpg" class="card-img-top" alt="first-project">
-        <div class="card-body">
-          <h5 class="card-title">Capstone Project 1</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3 card card02 pt-3 mb-3" style="width: 18rem;">
-        <img src="./images/nextproject.jpg" class="card-img-top" alt="second-project">
-        <div class="card-body">
-          <h5 class="card-title">Capstone Project 2</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
-        </div>
-      </div>
-      <div class="col-12 col-lg-3 card card03 pt-3 mb-3" style="width: 18rem;">
-        <img src="./images/nextproject.jpg" class="card-img-top" alt="third-project">
-        <div class="card-body">
-          <h5 class="card-title">Capstone Project 3</h5>
-          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-primary">Go somewhere</a>
+      <div class="row">
+        <div class="col-sm-12">
+          <div class="copyright-box">
+            <p class="copyright">&copy; Copyright <strong>MBlasco</strong>. All Rights Reserved</p>
+            <div class="credits">
+              
+              R.Engineered by <a href="https://www.linkedin.com/in/mnblasco/">Matthew Blasco</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-  <!-- Transition 4 -->
-  <div>
-    <hr class="bg-info">
-  </div>
-  <div class="bg-light">
-  </div>
-  <!-- Contact Section / Footer -->
-  <footer class="contactsection m-0 p-3 justify-content-center"> 
-  <h4 class="text-white classic pb-3" id="contactme"> Connect with Me! </h4> 
-    <div class="d-flex w-50 classic justify-content-between">
-    <a href="https://www.facebook.com/neyra.blasco"><img src="images/fb.png" class="contacts"></a>
-    <a href="https://www.instagram.com/mattblasco/"><img src="images/ig.png" class="contacts"></a>
-    <a href="https://twitter.com/hawking_fan"><img src="images/tw.png" class="contacts"></a>
-    </div>
-  </footer>
-  <!-- Animation Background -->
-  <div class="shapes d-flex justify-content-between">
-    <img src="images/triangle.png">
-    <img src="images/triangle2.png">
-    <img src="images/triangle3.png">
-    <img src="images/triangle4.png">
-    <img src="images/triangle5.png">
-    <img src="images/triangle.png">
-    <img src="images/triangle2.png">
+  </footer><!-- End  Footer -->
 
-  
-  </div>
-  
-      <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+
 </html>
