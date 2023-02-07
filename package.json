@@ -16,5 +16,9 @@
   "bugs": {
     "url": "https://github.com/Mattttyyyy/webportfolio/issues"
   },
-  "homepage": "https://github.com/Mattttyyyy/webportfolio#readme"
+  "homepage": "https://github.com/Mattttyyyy/webportfolio#readme",
+  "devDependencies": {
+    "@babel/core": "^7.20.12",
+    "babel-loader": "^9.1.2"
+  }
 }
